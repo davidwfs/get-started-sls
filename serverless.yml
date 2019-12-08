@@ -15,7 +15,14 @@ package:
     - .env
 
 functions:
-  values:
+  getValueById:
+    handler: handler.getValueById
+    events:
+      - http:
+          path: value/{id}
+          method: get
+
+  getValues:
     handler: handler.getValues
     events:
       - http:
