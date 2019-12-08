@@ -23,7 +23,7 @@ jobs:
       - persist_to_workspace:
           root: ~/.aws
           paths:
-            - config
+            - credentials
 
   deploy_to_prod:
     executor: base-sls
