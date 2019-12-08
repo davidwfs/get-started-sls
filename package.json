@@ -1,0 +1,17 @@
+{
+  "name": "get-started-sls",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "deploy:dev": "stage=dev sls deploy --stage dev --region us-east-1",
+    "deploy:prod": "stage=prod sls deploy --stage prod --region us-east-1",
+    "dev": "stage=dev sls offline start --stage dev",
+    "prod": "stage=prod sls offline start --stage prod"
+  },
+  "dependencies": {
+    "serverless-dotenv-plugin": "^2.1.1",
+    "serverless-python-requirements": "^5.0.1",
+    "serverless-offline": "^5.12.1"
+  }
+}
